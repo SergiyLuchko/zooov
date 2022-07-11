@@ -30,19 +30,18 @@
     letter-spacing: 0.02em;
     color: #ffffff;
     z-index: 1;
-    span {
-      position: relative;
-      z-index: 1;
-      &::after {
-        @include pseudo;
-        position: absolute;
-        width: 265px;
-        height: 100px;
-        background-image: url("../img/hero-ellips.svg");
-        left: -27px;
-        top: 0;
-        z-index: 0;
-      }
+
+    position: relative;
+    z-index: 1;
+    &::after {
+      @include pseudo;
+      position: absolute;
+      width: 265px;
+      height: 100px;
+      background-image: url("../img/hero-ellips.svg");
+      right: -27px;
+      bottom: 49px;
+      z-index: -1;
     }
   }
 

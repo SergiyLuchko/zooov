@@ -32,6 +32,9 @@ img {
 a {
   text-decoration: none;
 }
+p {
+  margin: 0;
+}
 
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
@@ -44,7 +47,7 @@ a {
 .btn-reset {
   border: none;
   padding: 0;
-  background: transparent;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -109,7 +112,7 @@ a {
 }
 
 .section-offset {
-  padding: 80px 0;
+  padding-bottom: 160px;
 }
 .title {
   font-family: "Oswald";
