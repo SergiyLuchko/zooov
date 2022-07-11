@@ -1,6 +1,7 @@
 .hero {
   padding: 225px 0;
   background-image: url("../../img/hero-bg.jpg");
+
   &::after {
     @include pseudo;
     position: absolute;
@@ -10,13 +11,10 @@
 
     background-image: url("../../img/zoov.svg");
     background-repeat: no-repeat;
-    right: -18px;
+    right: 0;
     top: 160px;
   }
   @include bg-cover;
-  &__inner {
-  }
-
   &__info {
     width: 408px;
     margin-right: auto;
