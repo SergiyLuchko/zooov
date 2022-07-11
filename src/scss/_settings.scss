@@ -19,6 +19,8 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  line-height: 140%;
+  color: var(--text-color);
 }
 
 img {
@@ -104,4 +106,8 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.section-offset {
+  padding-bottom: 160px;
 }

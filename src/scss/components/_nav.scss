@@ -1,0 +1,13 @@
+.nav {
+  &__list {
+    @include flex;
+    padding-right: 24px;
+  }
+  &__item {
+    @include mr(53px);
+  }
+  &__link {
+    font-weight: 500;
+    color: var(--light-color);
+  }
+}

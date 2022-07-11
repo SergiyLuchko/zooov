@@ -1,0 +1,8 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 16px;
+  &__inner {
+    @include flex-all-sb;
+  }
+}
