@@ -1,0 +1,99 @@
+.kit {
+  &__container {
+    width: 870px;
+    min-height: 680px;
+    background-color: #fff;
+    padding: 55px 65px 53px 52px;
+  }
+
+  &__content {
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    margin-right: 35px;
+    width: 350px;
+    height: 568px;
+  }
+  &__info {
+    width: 360px;
+  }
+
+  &__info-title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--title-color);
+  }
+
+  &__info-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #9f9e9d;
+    margin-bottom: 15px;
+  }
+
+  &__accordion {
+    margin-bottom: 150px;
+  }
+
+  &__accordion-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+  &__accordion-title {
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #9f9e9d;
+    padding-right: 15px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      @include pseudo;
+      position: absolute;
+      right: 0;
+      top: 8px;
+      width: 10px;
+      height: 6px;
+      background-image: url("../../img/check-down.svg");
+    }
+  }
+
+  &__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  .is-open {
+    .kit__accordion-title::after {
+      transform: rotate(180deg);
+    }
+  }
+  &__checkbox {
+    margin-bottom: 35px;
+  }
+  &__order {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__order-btn {
+    font-weight: 600;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    padding: 13px 42px;
+    border-radius: 8px;
+  }
+  .probe__content-details.kit__content-details {
+    left: 255px;
+    top: 70px;
+    right: auto;
+  }
+}
