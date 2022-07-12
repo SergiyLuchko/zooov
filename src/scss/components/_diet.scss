@@ -1,0 +1,85 @@
+.diet {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-right: 60px;
+    position: relative;
+    z-index: 1;
+    &::after {
+      @include pseudo;
+      position: absolute;
+      right: -30px;
+      top: -4px;
+      z-index: -1;
+      width: 182px;
+      height: 79px;
+      background-image: url("../img/diet/decor.svg");
+    }
+  }
+
+  &__text {
+    max-width: 777px;
+    padding-top: 10px;
+    color: var(--title-color);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  &__item {
+  }
+
+  &__item-img {
+    margin-bottom: 38px;
+    height: 335px;
+  }
+
+  &__item-info {
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--title-color);
+  }
+
+  &__item-text {
+    font-size: 13px;
+    line-height: 130%;
+    color: #9f9e9d;
+    margin-bottom: 15px;
+  }
+
+  &__item-descr {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  &__item-text--num {
+    margin-bottom: 24px;
+  }
+
+  &__item-btn {
+    padding: 13px 42px;
+    border-radius: 8px;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+  }
+}
+.section-offset {
+}
+.container {
+}
+.btn-reset {
+}
