@@ -1,0 +1,74 @@
+.care {
+  padding-top: 87px;
+  padding-bottom: 59px;
+  background-image: url("../../img/care/bg-decor.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 25%;
+  background-color: #fff4f3;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__imgbox {
+    max-width: 643px;
+    margin-right: 55px;
+    position: relative;
+    &::after,
+    &::before {
+      @include pseudo;
+      position: absolute;
+    }
+    &::after {
+      left: -55px;
+      bottom: 110px;
+      width: 183px;
+      height: 183px;
+      background-image: url("../../img/care/dog.png");
+    }
+    &::before {
+      right: -55px;
+      bottom: 360px;
+      width: 120px;
+      height: 120px;
+      z-index: 5;
+      background-image: url("../../img/care/heart.png");
+      @include bg-cover;
+    }
+  }
+
+  &__img {
+    z-index: 4;
+  }
+
+  &__img--top {
+    position: absolute;
+    bottom: 20px;
+    right: -80px;
+  }
+
+  &__content {
+    width: 588px;
+    padding: 40px 0;
+  }
+
+  &__title {
+    max-width: 416px;
+    margin: 0;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      @include pseudo;
+      position: absolute;
+      right: -15px;
+      bottom: 42px;
+      width: 29px;
+      height: 34px;
+      background-image: url("../../img/info/title-decor.svg");
+    }
+  }
+
+  &__text {
+    @include mb(25px);
+  }
+}
