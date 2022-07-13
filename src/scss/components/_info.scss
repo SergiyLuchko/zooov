@@ -1,0 +1,58 @@
+.info {
+  min-height: 236px;
+  background-image: url("../../img/info/bg-decor.svg");
+  @include bg-cover;
+  &__title {
+    margin: 0;
+    margin-bottom: 57px;
+    position: relative;
+    width: 290px;
+    &::after {
+      @include pseudo;
+      position: absolute;
+      right: -26px;
+      bottom: -18px;
+      width: 29px;
+      height: 34px;
+      background-image: url("../../img/info/title-decor.svg");
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 282px;
+    @include mr(25px);
+    &--smile {
+      position: relative;
+      &::before {
+        @include pseudo;
+        position: absolute;
+        left: -17px;
+        top: -25px;
+        width: 34px;
+        height: 30px;
+        background-image: url("../../img/info/item-decor.svg");
+      }
+    }
+  }
+
+  &__image {
+    margin-bottom: 11px;
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--title-color);
+    margin-bottom: 8px;
+
+    &__item-text {
+      color: var(--title-color);
+    }
+  }
+}
