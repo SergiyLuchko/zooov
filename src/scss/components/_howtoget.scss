@@ -1,0 +1,56 @@
+.howtoget {
+  min-height: 312px;
+  &__title {
+    margin: 0;
+    margin-bottom: 80px;
+  }
+  &__imgbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    &--heart {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -23px;
+        top: -36px;
+        width: 34px;
+        height: 30px;
+        background-image: url(../../img/info/item-decor.svg);
+      }
+    }
+  }
+  &__arrow {
+    padding-right: 40px;
+  }
+  &__items {
+    display: flex;
+    padding-right: 10px;
+  }
+
+  &__item {
+    width: 284px;
+    @include mr(27px);
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--title-color);
+    margin-bottom: 8px;
+  }
+
+  &__item-text {
+  }
+
+  &__item-link {
+  }
+}
+.container {
+}
+.title {
+}
