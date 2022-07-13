@@ -1,0 +1,66 @@
+.faq {
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    margin: 0;
+    margin-right: 83px;
+    padding-top: 35px;
+    max-width: 348px;
+  }
+
+  &__accordion {
+    max-width: 766px;
+    padding-top: 38px;
+  }
+
+  &__accordion-btn {
+    display: flex;
+    align-items: center;
+    max-width: 680px;
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--title-color);
+    position: relative;
+    transition: all 0.5s;
+    &::after,
+    &::before {
+      @include pseudo;
+      position: absolute;
+      right: -70px;
+      width: 2px;
+      height: 20px;
+      background-color: var(--btn-color);
+      border-radius: 2px;
+      transform: rotate(90deg);
+      transition: all 0.3s;
+    }
+    &::before {
+      width: 20px;
+      height: 2px;
+      right: -79px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    p {
+      margin-bottom: 32px;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #e5e5e5;
+
+      margin-bottom: 32px;
+    }
+  }
+}
+.is-open.faq__accordion-btn::before {
+  transform: rotate(0);
+}

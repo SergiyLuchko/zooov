@@ -1,4 +1,4 @@
-const accordionBtns = document.querySelectorAll(".js-kit-btn");
+const accordionBtns = document.querySelectorAll(".js-kit-btn, .faq__accordion-btn");
 
 accordionBtns.forEach((accordion) => {
   accordion.onclick = function () {
