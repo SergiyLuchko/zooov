@@ -1,0 +1,102 @@
+.norms {
+  padding: 60px 0 30px;
+  background-color: #fff4f3;
+  &__title {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px dashed #ead1d0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--btn-color);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+
+  &__items-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 524px;
+    margin-bottom: 29px;
+  }
+  &__items {
+    width: 559px;
+  }
+  &__item {
+    width: 230px;
+  }
+
+  &__items-title {
+    margin: 0;
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--title-color);
+
+    margin-bottom: 32px;
+    span {
+      display: block;
+      padding-top: 7px;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: var(--title-color);
+    }
+  }
+
+  &__list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &__list-item {
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #434242;
+    @include mb(10px);
+    display: flex;
+    span {
+      width: 100px;
+    }
+  }
+
+  &__list-item--title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    padding-right: 0;
+    display: inline-block;
+    span {
+      @include mr(12px);
+    }
+  }
+
+  &__text {
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__footnote {
+    font-weight: 400;
+    font-size: 12px;
+    color: #635d5d;
+  }
+}
