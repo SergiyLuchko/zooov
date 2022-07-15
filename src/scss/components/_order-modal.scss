@@ -1,0 +1,106 @@
+.order-modal {
+  &__container {
+    width: 872px;
+    min-height: 612px;
+  }
+
+  &__content {
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__img {
+    margin-right: 45px;
+    height: 500px;
+  }
+
+  &__info {
+    width: 365px;
+  }
+
+  &__info-title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--title-color);
+  }
+
+  &__info-subtitle {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #9f9e9d;
+  }
+
+  &__info-form {
+    width: 100%;
+  }
+
+  &__info-input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    background-color: #f4f5f5;
+    border-radius: 8px;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    background-color: #f4f5f5;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--title-color);
+    position: relative;
+  }
+  &__plus,
+  &__minus,
+  &__num {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(#000, 0.5);
+  }
+  &__plus {
+  }
+  &__minus {
+  }
+  &__num {
+    font-size: 14px;
+  }
+
+  &__checkbox {
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+  }
+
+  &__btn {
+    border: 1px solid var(--btn-color);
+    border-radius: 8px;
+    padding: 13px 54px;
+    font-weight: 600;
+    color: var(--btn-color);
+  }
+}

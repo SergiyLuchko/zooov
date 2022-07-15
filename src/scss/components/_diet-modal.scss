@@ -1,0 +1,83 @@
+.diet-modal {
+  &__container {
+    width: 872px;
+    height: 615px;
+  }
+
+  &__content {
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__left {
+    width: 351px;
+    margin-right: 43px;
+  }
+
+  &__img {
+    margin-bottom: 18px;
+  }
+
+  &__imgbox {
+  }
+
+  &__thumbs {
+    @include mr(15px);
+  }
+
+  &__right {
+    width: 366px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--title-color);
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 130%;
+    color: #9f9e9d;
+  }
+
+  &__text {
+    margin-bottom: 45px;
+    font-size: 14px;
+  }
+
+  &__descr {
+    margin-bottom: 72px;
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__info {
+    margin-bottom: 19px;
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__num {
+    margin-bottom: 37px;
+    font-size: 13px;
+    line-height: 130%;
+    color: #9f9e9d;
+  }
+
+  &__btn {
+    padding: 13px 42px;
+    border: 1px solid var(--btn-color);
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--btn-color);
+  }
+}

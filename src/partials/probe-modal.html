@@ -1,4 +1,4 @@
-<div class="graph-modal probe-modal kit">
+<div class="graph-modal probe-modal kit diet-modal">
   <div class="graph-modal__container probe-modal__container" role="dialog" aria-modal="true" data-graph-target="cost">
     <button class="btn-reset graph-modal__close probe-modal__close js-modal-close"
       aria-label="Закрыть модальное окно"></button>
@@ -43,7 +43,7 @@
       </form>
     </div>
   </div>
-
+  <!-- probe-section modal -->
   <div class="graph-modal__container kit__container" role="dialog" aria-modal="true" data-graph-target="kit">
     <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
     <div class="graph-modal__content kit__content">
@@ -238,6 +238,110 @@
             </div>
             <button class="kit__order-btn btn-reset">Оформить заказ</button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- kit modal -->
+
+  <div class="graph-modal__container diet-modal__container" role="dialog" aria-modal="true" data-graph-target="diet">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content diet-modal__content">
+      <div class="diet-modal__inner">
+        <div class="diet-modal__left">
+          <img class="diet-modal__img" src="img/diet-modal/big.jpg" alt="">
+          <div class="diet-modal__imgbox">
+            <img class="diet-modal__thumbs" src="img/diet-modal/thumb1.jpg" alt="">
+            <img class="diet-modal__thumbs" src="img/diet-modal/thumb2.jpg" alt="">
+            <img class="diet-modal__thumbs" src="img/diet-modal/thumb3.jpg" alt="">
+          </div>
+        </div>
+        <div class="diet-modal__right">
+          <h4 class="diet-modal__title">Для взрослых собак </h4>
+          <p class="diet-modal__subtitle">Баранина/Кролик</p>
+          <p class="diet-modal__text">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+          <p class="diet-modal__descr"><span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%), кости
+            кролика (10%), печень баранины (5%), почки бараньи (2,5%),
+            рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
+            конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
+            конопляное масло.</p>
+          <p class="diet-modal__info"><span>Пищевая ценность на 100г:</span> 174.9 ккал,
+            белки 16.45, жиры 11.9, углеводы 0.60</p>
+          <p class="diet-modal__num">500г/300г/100г</p>
+          <button class="diet-modal__btn btn-reset" data-graph-path="order">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- diet-modal -->
+
+  <div class="graph-modal__container order-modal__container" role="dialog" aria-modal="true" data-graph-target="order">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content order-modal__content">
+      <div class="order-modal__inner">
+        <img class="order-modal__img" src="img/order-modal.jpg" alt="">
+        <div class="order-modal__info">
+          <h4 class="order-modal__info-title">Для взрослых собак </h4>
+          <p class="order-modal__info-subtitle">Баранина/Кролик</p>
+          <form action="" class="order-modal__info-form">
+            <input type="text" class="order-modal__info-input input-reset" placeholder="Имя">
+            <input type="text" class="order-modal__info-input input-reset" placeholder="Телефон">
+            <input type="text" class="order-modal__info-input input-reset" placeholder="Адрес">
+            <div class="select ">
+              <div class="select__header">
+                <span class="select__current">Выберите объем</span>
+                <div class="select__icon">
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 1L5 5L1 1" stroke="#434242" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="select__body">
+                <div class="select__item">100г</div>
+                <div class="select__item">150г</div>
+                <div class="select__item">300г</div>
+                <div class="select__item">500г</div>
+                <div class="select__item">700г</div>
+              </div>
+
+            </div>
+            <label class="order-modal__label">
+              Количество:
+              <button class="order-modal__plus btn-reset">+</button>
+              <input class="order-modal__num input-reset" type="text" value="0" min="0" max="100" step="1" readonly>
+              <button class="order-modal__minus btn-reset">-</button>
+            </label>
+            <label class="custom-checkbox probe-modal__checkbox kit__checkbox order-modal__checkbox">
+              <input type="checkbox" class="custom-checkbox__field probe-modal__checkbox-field visually-hidden" checked>
+              <span class="custom-checkbox__content probe-modal__checkbox-content">
+              </span> Даю согласие на обработку
+              персональных данных
+            </label>
+          </form>
+          <div class="order-modal__box">
+            <p class="order-modal__price">828₽</p>
+            <button class="order-modal__btn btn-reset" data-graph-path="thanks">Оформить заказ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- order-modal -->
+
+  <div class="graph-modal__container thanks__container" role="dialog" aria-modal="true" data-graph-target="thanks">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content thanks__content">
+      <div class="thanks__inner">
+        <img class="thanks__img" src="img/diet-modal/big.jpg" alt="">
+        <div class="thanks__info">
+          <h3 class="thanks__info-title title">Спасибо!</h3>
+          <p class="thanks__info-text">
+            Ваш заказ оформлен и передан менеджеру.
+            Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.
+          </p>
+          <p class="thanks__info-text">
+            Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у оператора.
+          </p>
         </div>
       </div>
     </div>

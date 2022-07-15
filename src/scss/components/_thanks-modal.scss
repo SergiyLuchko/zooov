@@ -1,0 +1,41 @@
+.thanks {
+  &__container {
+    width: 872px;
+    height: 533px;
+  }
+
+  &__content {
+  }
+
+  &__inner {
+    display: flex;
+
+    align-items: center;
+  }
+
+  &__img {
+    min-height: 421px;
+    margin-right: 45px;
+  }
+
+  &__info {
+    max-width: 373px;
+  }
+
+  &__info-title {
+    margin: 0;
+    margin-bottom: 22px;
+    color: var(--btn-color);
+  }
+
+  &__info-text {
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 130%;
+    color: var(--title-color);
+  }
+}
+.btn-reset {
+}
+.js-modal-close {
+}
