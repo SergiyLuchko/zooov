@@ -97,10 +97,12 @@
   }
 
   &__btn {
+    @include hoverpink;
     border: 1px solid var(--btn-color);
     border-radius: 8px;
     padding: 13px 54px;
     font-weight: 600;
     color: var(--btn-color);
+    transition: all 0.3s;
   }
 }

@@ -87,6 +87,10 @@
     font-size: 14px;
     line-height: 140%;
     color: var(--light-color);
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: 0.4);
+    }
     &::before {
       @include pseudo;
       width: 24px;
@@ -142,6 +146,11 @@
     color: #ec7973;
     background-color: #fff4f3;
     border-radius: 8px;
+    transition: all 0.3s;
+    &:hover {
+      color: var(--btn-color);
+      background-color: #ead1d0;
+    }
   }
 
   &__bottom {

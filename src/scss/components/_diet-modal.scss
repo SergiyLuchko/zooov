@@ -74,10 +74,12 @@
   }
 
   &__btn {
+    @include hoverpink;
     padding: 13px 42px;
     border: 1px solid var(--btn-color);
     border-radius: 8px;
     font-weight: 600;
     color: var(--btn-color);
+    transition: all 0.3s;
   }
 }

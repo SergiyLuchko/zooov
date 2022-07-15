@@ -54,9 +54,12 @@
   }
 
   &__btn {
+    @include hoverred;
     padding: 13px 42px;
     color: var(--light-color);
     background-color: var(--btn-color);
     border-radius: 8px;
+
+    transition: all 0.3s;
   }
 }

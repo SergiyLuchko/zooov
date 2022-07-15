@@ -85,11 +85,13 @@
     justify-content: space-between;
   }
   &__order-btn {
+    @include hoverpink;
     font-weight: 600;
     color: var(--btn-color);
     border: 1px solid var(--btn-color);
     padding: 13px 42px;
     border-radius: 8px;
+    transition: all 0.3s;
   }
   .probe__content-details.kit__content-details {
     left: 255px;

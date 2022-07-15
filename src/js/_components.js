@@ -2,5 +2,6 @@
 import'./components/modal'
 import'./components/accordion'
 import'./components/select'
+import'./components/scroll'
 import'./components/stepper'
 

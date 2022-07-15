@@ -144,6 +144,7 @@
     margin-right: 8px;
   }
   &__form-btn {
+    @include hoverred;
     width: 100%;
     font-weight: 600;
     font-size: 16px;
@@ -152,5 +153,6 @@
     padding: 13px 42px;
     background-color: var(--btn-color);
     border-radius: 8px;
+    transition: all 0.3s;
   }
 }
