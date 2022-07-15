@@ -1,8 +1,33 @@
 .header {
-  position: absolute;
+  padding-top: 16px;
+  position: fixed;
   width: 100%;
-  top: 16px;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  transition: all 0.3s;
   &__inner {
+    height: 80px;
     @include flex-all-sb;
+  }
+}
+.header--fixed {
+  position: fixed;
+  background-color: #fff;
+  padding-top: 0;
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .nav__link {
+    color: var(--title-color);
+    padding: 3px 5px;
+    transition: all 0.3s;
+    &:hover {
+      border-bottom: 2px solid var(--btn-color);
+    }
+    &.nav__link--active {
+      border-bottom: 2px solid var(--btn-color);
+    }
   }
 }
