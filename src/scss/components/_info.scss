@@ -15,12 +15,22 @@
       width: 29px;
       height: 34px;
       background-image: url("../../img/info/title-decor.svg");
+      @include mobile {
+        right: 12px;
+      }
+    }
+    @include tablet {
+      margin-bottom: 40px;
     }
   }
 
   &__items {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   }
 
   &__item {
@@ -37,6 +47,10 @@
         height: 30px;
         background-image: url("../../img/info/item-decor.svg");
       }
+    }
+    @include tablet {
+      @include mr(0px);
+      margin-bottom: 40px;
     }
   }
 

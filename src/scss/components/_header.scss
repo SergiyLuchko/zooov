@@ -18,6 +18,10 @@
   .logo {
     width: 60px;
     height: 60px;
+    @include tablet {
+      width: 48px;
+      height: 48px;
+    }
   }
   .nav__link {
     color: var(--title-color);
@@ -29,5 +33,12 @@
     &.nav__link--active {
       border-bottom: 2px solid var(--btn-color);
     }
+  }
+}
+.logo {
+  z-index: 500;
+  @include tablet {
+    width: 48px;
+    height: 48px;
   }
 }

@@ -3,6 +3,9 @@
   &__title {
     margin: 0;
     margin-bottom: 80px;
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
   }
   &__imgbox {
     display: flex;
@@ -19,21 +22,46 @@
         top: -36px;
         width: 34px;
         height: 30px;
-        background-image: url(../../img/info/item-decor.svg);
+        background-image: url("../img/info/item-decor.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include tablet {
+          left: 30px;
+          top: -20px;
+          transform: rotate(90deg);
+        }
       }
     }
   }
   &__arrow {
     padding-right: 40px;
+    @include mobile {
+      display: none;
+    }
   }
   &__items {
     display: flex;
-    padding-right: 10px;
+    @include tablet {
+      padding-left: 24px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    @include mobile {
+      justify-content: flex-start;
+      background-image: url("../../img/howtoget/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   &__item {
     width: 284px;
+
     @include mr(27px);
+    @include tablet {
+      @include mr(0px);
+      @include mb(40px);
+    }
   }
 
   &__item-title {
@@ -44,13 +72,9 @@
     margin-bottom: 8px;
   }
 
-  &__item-text {
-  }
-
   &__item-link {
+    color: var(--btn-color);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
   }
-}
-.container {
-}
-.title {
 }

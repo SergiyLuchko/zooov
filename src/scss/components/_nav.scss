@@ -1,13 +1,55 @@
 .nav {
+  @include tablet {
+    display: block;
+  }
   &__list {
     @include flex;
     padding-right: 24px;
+    @include tablet {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 5;
+      transform: translateY(-200%);
+      transition: all 0.3s;
+      background-color: #fff;
+
+      &.menu--active {
+        transform: translateY(0);
+        transition: all 0.3s;
+      }
+    }
   }
   &__item {
     @include mr(53px);
+    @include tablet {
+      @include mr(0);
+      margin-bottom: 30px;
+    }
   }
   &__link {
     font-weight: 500;
     color: var(--light-color);
+    &--button {
+      display: none;
+    }
+    @include tablet {
+      color: var(--title-color);
+      &--button {
+        display: block;
+        @include hoverred;
+        padding: 13px 42px;
+        color: var(--light-color);
+        background-color: var(--btn-color);
+        border-radius: 8px;
+        transition: all 0.3s;
+        margin-top: 100px;
+      }
+    }
   }
 }

@@ -1,3 +1,21 @@
 .burger {
+  @include burger;
+  z-index: 999;
+  color: #fff;
   display: none;
+  &--active {
+    &::after,
+    &::before {
+      background-color: #000;
+    }
+  }
+  @include tablet {
+    display: block;
+  }
+}
+.header--fixed {
+  .burger {
+    z-index: 500;
+    color: #000;
+  }
 }

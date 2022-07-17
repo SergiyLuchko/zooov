@@ -16,7 +16,7 @@ html {
 
 .page__body {
   margin: 0;
-  min-width: 320px;
+  min-width: 300px;
   min-height: 100%;
   font-size: 16px;
   line-height: 140%;
@@ -114,6 +114,10 @@ p {
 .section-offset {
   padding-top: 80px;
   margin-bottom: 80px;
+  @include small-tablet {
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
 }
 .title {
   font-family: "Oswald";
@@ -122,4 +126,7 @@ p {
   line-height: 130%;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  @include mobile {
+    font-size: 40px;
+  }
 }
