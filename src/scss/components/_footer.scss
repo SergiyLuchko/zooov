@@ -1,10 +1,17 @@
 .footer {
   background-image: url("../../img/footer/decor-left.svg");
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: 0 100%;
+  background-size: 10%;
   background-color: var(--btn-color);
   color: var(--light-color);
   position: relative;
+  @include small-mobile {
+    background-image: url("../../img/footer/decor-mob.svg");
+    background-repeat: no-repeat;
+    background-position: 104% 88%;
+    background-size: 50%;
+  }
 
   &::after {
     @include pseudo;
@@ -16,18 +23,32 @@
     background-image: url("../../img/footer/apple.png");
     background-repeat: no-repeat;
     background-size: cover;
+    @include small-mobile {
+      bottom: 225px;
+      right: auto;
+      left: 50px;
+    }
   }
 
   &__inner {
     padding-top: 80px;
     background-image: url("../../img/footer/decor-right.svg");
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: 105% -97px;
+    @include mobile {
+      background-position: 125% -119px;
+    }
+    @include min {
+      background-position: 175% -126px;
+    }
   }
   &__top {
     padding-bottom: 80px;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__top-info {
@@ -43,6 +64,10 @@
       background-image: url("../../img/footer/meat.png");
       background-repeat: no-repeat;
       background-size: cover;
+      @include tablet {
+        top: 364px;
+        right: calc(100vw - 111%);
+      }
     }
     &::after {
       @include pseudo;
@@ -54,6 +79,13 @@
       background-image: url("../../img/footer/dog.png");
       background-repeat: no-repeat;
       background-size: cover;
+      @include tablet {
+        top: 84px;
+        right: calc(100vw - 111%);
+      }
+    }
+    @include tablet {
+      width: 100%;
     }
   }
 
@@ -108,10 +140,18 @@
   &__top-subscribe {
     margin-top: 40px;
     color: var(--light-color);
+    @include tablet {
+      margin-bottom: 60px;
+    }
   }
   &__top-insta {
     color: inherit;
     text-decoration: underline;
+  }
+  &__connection {
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__connection-title {
@@ -127,6 +167,9 @@
   &__box {
     display: flex;
     justify-content: space-between;
+    @include small-mobile {
+      flex-wrap: wrap;
+    }
   }
 
   &__checkbox {
@@ -135,6 +178,10 @@
     .probe-modal__checkbox-content {
       background-color: #fff;
       width: 20px;
+    }
+    @include small-mobile {
+      width: 100%;
+      margin-bottom: 30px;
     }
   }
 
@@ -151,6 +198,10 @@
       color: var(--btn-color);
       background-color: #ead1d0;
     }
+    @include small-mobile {
+      width: 100%;
+      margin-bottom: 65px;
+    }
   }
 
   &__bottom {
@@ -159,11 +210,18 @@
     background-color: #69120e;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.4);
+    @include small-mobile {
+      text-align: left;
+      padding: 30px 24px;
+    }
   }
 
   &__bottom-text {
     display: inline-block;
     margin-right: 30px;
+    @include small-mobile {
+      margin-bottom: 25px;
+    }
   }
 
   &__bottom-link {
@@ -203,9 +261,15 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
+    @include tablet {
+      width: 100%;
+    }
   }
   &__input + .footer-form__input {
     margin-left: 24px;
+    @include tablet {
+      margin-left: 0;
+    }
   }
 
   &__textarea {
@@ -218,5 +282,8 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
+  }
+  @include tablet {
+    max-width: 100%;
   }
 }
