@@ -16,6 +16,11 @@
     @content;
   }
 }
+@mixin desk {
+  @media (max-width: (1150px)) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (max-width: (1024px)) {
