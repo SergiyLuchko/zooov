@@ -6,21 +6,22 @@ const swiper = new Swiper('.about-swiper', {
 		el: '.about-swiper__pagination',
 		clickable: true,
 	},
+
+    slidesPerView: 2,
+    fadeEffect:true,
   breakpoints: {
 		320: {
 			slidesPerView: 1,
 		},
 
-		1024: {
+		640: {
 			slidesPerView: 2,
 		},
 	},
 
-	autoHeight: true,
-	slidesPerView: 2,
 
 });
-const swiper1 = new Swiper('.diet-swiper', {
+const dietSwiper = new Swiper('.diet-swiper', {
 	pagination: {
 		el: '.diet-swiper__pagination',
 		clickable: true,
@@ -50,11 +51,30 @@ const swiper1 = new Swiper('.diet-swiper', {
   },
 
 	loopedSlides: true,
+});
+const probeSwiper = new Swiper('.probe-swiper', {
+  pagination: {
+		el: '.probe-swiper__pagination',
+		clickable: true,
+	},
+slidesPerView:3,
+breakpoints: {
+  // when window width is >= 320px
+ 320: {
+    slidesPerView: 1,
+    spaceBetween: 20
+  },
+  // when window width is >= 480px
 
-	// autoHeight: true,
-	// spaceBetween: 24,
-
-
-
+  // when window width is >= 640px
+  576: {
+    slidesPerView: 2,
+    spaceBetween: 40
+  },
+  1100: {
+    slidesPerView: 3,
+    spaceBetween: 25
+  }
+},
 });
 

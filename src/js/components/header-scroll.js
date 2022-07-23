@@ -13,6 +13,7 @@ window.addEventListener('scroll', () => {
 		header.classList.remove('header--fixed');
 		first.style.marginTop = null;
 	}
+  
 });
 
 

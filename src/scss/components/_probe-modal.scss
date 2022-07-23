@@ -10,9 +10,15 @@
     width: 550px;
     height: 890px;
     padding: 56px 56px 32px;
+    @include small-tablet {
+      width: 90%;
+      height: auto;
+    }
+    @include mobile {
+      padding: 56px 15px 32px;
+    }
   }
-  &__content {
-  }
+
   &__title {
     font-family: "Oswald";
     font-weight: 700;
@@ -102,6 +108,9 @@
     padding: 14px 16px 43px;
     &::placeholder {
       max-width: 307px;
+    }
+    @include mobile {
+      padding: 5px;
     }
   }
   &__checkbox {

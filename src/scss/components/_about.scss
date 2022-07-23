@@ -62,18 +62,27 @@
     fill: var(--btn-color);
     margin-right: 11px;
   }
+  @include mobile {
+    padding: 32px 45px;
+  }
 }
 
 // *****************
 
 .about-swiper {
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 140px;
+    @include mobile {
+    }
   }
 
-  &__slide {
+  &__slide-wrapper {
     max-width: 450px;
+    @include mobile {
+      width: 300px;
+    }
   }
 
   &__title {
@@ -89,7 +98,10 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__list-box {
@@ -100,9 +112,14 @@
     max-width: 230px;
     display: flex;
     align-items: center;
+    @include mb(20px);
+    @include tablet {
+    }
   }
   &__pagination {
-    @include tablet {
+    display: none;
+    @include mobile {
+      display: block;
       text-align: center;
       .swiper-pagination-bullet {
         display: inline-block;

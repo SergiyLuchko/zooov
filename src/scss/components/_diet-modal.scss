@@ -2,18 +2,27 @@
   &__container {
     width: 872px;
     height: 615px;
-  }
-
-  &__content {
+    @include tablet {
+      width: 90%;
+      height: auto;
+    }
   }
 
   &__inner {
     display: flex;
+    @include small-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__left {
     width: 351px;
     margin-right: 43px;
+    @include small-tablet {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__img {

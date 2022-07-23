@@ -4,6 +4,12 @@
     min-height: 680px;
     background-color: #fff;
     padding: 55px 65px 53px 52px;
+    @include tablet {
+      width: 90%;
+    }
+    @include mobile {
+      padding: 50px 15px 25px 15px;
+    }
   }
 
   &__content {
@@ -12,14 +18,28 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
   &__img {
     margin-right: 35px;
     width: 350px;
     height: 568px;
+    @include tablet {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    @include small-tablet {
+      height: auto;
+    }
   }
   &__info {
     width: 360px;
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__info-title {
@@ -83,6 +103,15 @@
   &__order {
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__order-price {
+    @include mobile {
+      margin-bottom: 10px;
+    }
   }
   &__order-btn {
     @include hoverpink;
@@ -97,5 +126,8 @@
     left: 255px;
     top: 70px;
     right: auto;
+    @include tablet {
+      left: 70px;
+    }
   }
 }

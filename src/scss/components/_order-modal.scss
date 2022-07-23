@@ -2,18 +2,29 @@
   &__container {
     width: 872px;
     min-height: 612px;
-  }
-
-  &__content {
+    @include tablet {
+      width: 90%;
+      height: auto;
+    }
   }
 
   &__inner {
     display: flex;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__img {
     margin-right: 45px;
     height: 500px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+    @include small-tablet {
+      margin-right: 0;
+    }
   }
 
   &__info {
@@ -85,6 +96,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__price {
@@ -94,6 +109,9 @@
     line-height: 130%;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__btn {
