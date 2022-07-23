@@ -6,6 +6,7 @@
     @include flex;
     padding-right: 24px;
     @include tablet {
+      overflow: auto;
       z-index: 500;
       position: absolute;
       top: 0;

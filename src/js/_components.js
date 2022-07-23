@@ -6,5 +6,5 @@ import'./components/scroll'
 import'./components/header-scroll'
 import'./components/nav'
 import'./components/slider'
-// import'./components/stepper'
+import'./components/stepper'
 

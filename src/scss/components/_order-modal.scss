@@ -66,6 +66,7 @@
     align-items: center;
     width: 200px;
     height: 48px;
+    padding: 5px;
     background-color: #f4f5f5;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -84,9 +85,11 @@
   &__plus {
   }
   &__minus {
+    margin-bottom: 5px;
   }
   &__num {
     font-size: 14px;
+    background-color: #f4f5f5;
   }
 
   &__checkbox {
